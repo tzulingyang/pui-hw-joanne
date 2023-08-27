@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://tzulingyang.github.io/pui-hw-joanne
 
-Repository link: `add the URL to this repository`
+Repository link: https://github.com/tzulingyang/pui-hw-joanne
