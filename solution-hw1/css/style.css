@@ -1,0 +1,220 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.bun-bun {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 30px;
+
+}
+
+hr.solid{
+    border-top: 5px solid black;
+    margin-top: 25px;
+}
+
+.menu-bar {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    line-height: 60px;
+}
+a.menu{
+    text-decoration: none;
+    color: black;
+}
+
+a.menu-product, a.menu-cart{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+.gallery-title, .detail-title, .cart-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+
+
+/* How to align the box in the center? */
+.product-list{
+    margin: 50px auto;
+    width: fit-content;
+    padding: 0px 8px;
+}
+
+
+
+.product-list:hover {
+    background-color: yellow;
+}
+
+.product-list:hover .item-name {
+    font-weight: bold;
+}
+
+
+a.item{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.item-img{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black ;
+    margin-top: 10px;
+}
+
+.item-name{
+    font-size: 36px;
+    color: black;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.item-price{
+    font-size: 36px;
+    color: black;
+    margin: 0px;
+}
+
+.product-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-detail-img{
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+}
+
+.item-detail-text{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.instruction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preference{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+select{
+    width: 250px;
+    height: 40px;
+    padding: 0px 12px;
+    border: 2px solid;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.add-to-cart{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 100px 40px;
+    margin-inline-start: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+button.add, button.checkout{
+    font-size:16px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+
+button.add:hover{
+    background-color: yellow;
+}
+
+button.checkout:hover{
+    background-color: yellow;
+}
+
+p.remove{
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+
+.cart-item-img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.cart-list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+.cart-item{
+    font-size: 24px;
+    line-height: 10px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.cart-item-price{
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.checkout{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 100px;
+}
+
+#cart-line{
+    width: 50%;
+}
