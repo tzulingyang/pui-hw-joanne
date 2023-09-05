@@ -3,6 +3,7 @@ body{
     font-weight: lighter;
 }
 
+/* Set the size for the logo */
 .bun-bun {
     width: 400px;
     margin-top: 50px;
@@ -21,11 +22,14 @@ hr.solid{
     margin: 10px;
     line-height: 60px;
 }
+
+/* Custom the style for the <a> tag */
 a.menu{
     text-decoration: none;
     color: black;
 }
 
+/* Set the background color to yellow when it's on the page*/
 a.menu-product, a.menu-cart{
     text-decoration: none;
     color: black;
@@ -42,7 +46,7 @@ a.menu-product, a.menu-cart{
 
 
 
-/* How to align the box in the center? */
+/* Align all the product the the center of the page */
 .product-list{
     margin: 50px auto;
     width: fit-content;
@@ -50,16 +54,17 @@ a.menu-product, a.menu-cart{
 }
 
 
-
+/* Set the background color to yellow when the cursor hover the item */
 .product-list:hover {
     background-color: yellow;
 }
 
+/* Only the item-name will be turned into bold text when the cursor hover the item*/
 .product-list:hover .item-name {
     font-weight: bold;
 }
 
-
+/* Set all product in the middle of the page with only one column*/
 a.item{
     text-decoration: none;
     width: 100%;
@@ -117,7 +122,8 @@ div.detail{
     font-size: 20px;
 }
 
-.instruction{
+/* Align the description text in the center */
+.introduction{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,6 +136,8 @@ div.detail{
     margin-top: 40px;
 }
 
+
+/* Custom the dropdown box */
 select{
     width: 250px;
     height: 40px;
@@ -151,7 +159,7 @@ select{
 }
 
 
-
+/* Custom both the 'add to cart' and 'checkout' buttons  */
 button.add, button.checkout{
     font-size:16px;
     font-weight: bold;
@@ -163,19 +171,16 @@ button.add, button.checkout{
     height: 40px;
 }
 
-button.add:hover{
+/* The button turn yellow when hover  */
+button.add:hover, button.checkout:hover{
     background-color: yellow;
 }
 
-button.checkout:hover{
-    background-color: yellow;
-}
 
-p.remove{
+a.remove{
     text-decoration: underline;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 40px;
 }
 
 
@@ -184,6 +189,7 @@ p.remove{
     width: 200px;
     height: 200px;
     border: 3px solid black;
+    margin-bottom: 10px;
 }
 
 .cart-list{
