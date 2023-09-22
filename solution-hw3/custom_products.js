@@ -19,7 +19,7 @@ function glazingChange(element) {
     for (let i of Object.keys(glazing_price)){
         if (glazing_change === glazing_price[i][0]){
             total_glazing = glazing_price[i][1];
-            console.log('glazing = ' + total_glazing);
+            // console.log('glazing = ' + total_glazing);
         }
     }
     total = ((totalPrice + total_glazing) * total_pack).toFixed(2);
@@ -35,7 +35,7 @@ function packChange(element) {
     for (let j of Object.keys(packsize_price)){
         if (pack_size === packsize_price[j][0]){
             total_pack = packsize_price[j][1];
-            console.log('pack size = ' + total_pack);
+            // console.log('pack size = ' + total_pack);
         }
     }
     total = ((totalPrice + total_glazing) * total_pack).toFixed(2);
