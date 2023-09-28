@@ -43,7 +43,7 @@ headerElement.innerText = rollType + ' Cinnamon Roll';
 
 // Update the image
 const itemImage = document.querySelector('#item-img');
-itemImage.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg';
+itemImage.src = '../assets/products/' + rolls[rollType]['imageFile'];
 
 // Update the base price
 const baseprice = document.querySelector('#cart-price');
@@ -112,6 +112,7 @@ class Roll {
 
 function AddtoCart(){
     const New_cartitems = new Roll(rollType, glazing, pack, rolls[rollType]['basePrice'])
+
     cart.push(New_cartitems);
     console.log(cart);
 }
