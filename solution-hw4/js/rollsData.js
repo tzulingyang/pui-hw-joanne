@@ -69,7 +69,6 @@ const glazing_price = {
 // function happens when something change for the dropdown list. Default: Keep original ($ 0.00)
 function glazingChange(element) {
     const glazing_change = element.value;
-    console.log(glazing_change);
     total_glazing = glazing_price[glazing_change];
     total = ((totalPrice + total_glazing) * total_pack).toFixed(2);
     document.getElementById('cart-price').innerHTML = '$ ' + total;
