@@ -35,7 +35,6 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
-console.log(rollType);
 
 // Update the header
 const headerElement = document.querySelector('#detail-header-title');
@@ -52,7 +51,6 @@ baseprice.innerText = '$ ' + rolls[rollType]['basePrice'];
 /* --------------------------------------------------------------------- */
 
 let totalPrice = rolls[rollType]['basePrice'];
-console.log('base price:' + totalPrice);
 
 let total_glazing = 0;
 let glazing_choice = 'keep-original';
