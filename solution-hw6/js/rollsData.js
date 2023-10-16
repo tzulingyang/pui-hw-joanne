@@ -109,13 +109,10 @@ class Roll {
 
 
 
-
+let cart = [];
 const cartString = localStorage.getItem('storedProducts');
 const current_cart = JSON.parse(cartString);
-if (!current_cart){
-    const current_cart = [];
-}
-// let cart = current_cart;
+let cart = current_cart;
 
 function AddtoCart(rollType, glazing_choice, pack, basePrice){
     const New_cartitems = new Roll(rollType, glazing_choice, pack, basePrice);
