@@ -139,8 +139,9 @@ function deleteCart(Roll){
 /* ----------solution hw6----------------------------------------------------------- */
 
 function retrieveFromLocalStorage(){
-    const cartString = localStorage.getItem('storedProducts');
-    const cart = JSON.parse(cartString);
+    // const cartString = localStorage.getItem('storedProducts');
+    // const cart = JSON.parse(cartString);
+    console.log(cart);
     for (const product of cart){
         const New_items = new Roll(product.type, product.glazing, product.size, product.basePrice);
         createCart(New_items);
