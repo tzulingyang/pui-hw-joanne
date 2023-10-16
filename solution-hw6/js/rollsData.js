@@ -109,7 +109,7 @@ class Roll {
 
 
 
-let cart = [];
+
 const cartString = localStorage.getItem('storedProducts');
 const current_cart = JSON.parse(cartString);
 let cart = current_cart;
