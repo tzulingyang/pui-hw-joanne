@@ -108,6 +108,8 @@ class Roll {
 }
 
 
+
+
 const cartString = localStorage.getItem('storedProducts');
 const current_cart = JSON.parse(cartString);
 let cart = current_cart;
@@ -115,13 +117,12 @@ let cart = current_cart;
 function AddtoCart(rollType, glazing_choice, pack, basePrice){
     const New_cartitems = new Roll(rollType, glazing_choice, pack, basePrice);
     cart.push(New_cartitems);
-    return cart;
 }
 
 /* ----------solution hw6----------------------------------------------------------- */
 
 function submit(){
-    const New_item = AddtoCart(rollType, glazing_choice, pack, rolls[rollType]['basePrice']);
+    AddtoCart(rollType, glazing_choice, pack, rolls[rollType]['basePrice']);
     saveToLocalStorage();
 }
 
