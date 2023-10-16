@@ -116,6 +116,7 @@ if (!current_cart){
     current_cart = [];
 }
 // let cart = current_cart;
+console.log(current_cart);
 
 function AddtoCart(rollType, glazing_choice, pack, basePrice){
     const New_cartitems = new Roll(rollType, glazing_choice, pack, basePrice);
