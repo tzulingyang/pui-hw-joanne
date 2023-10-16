@@ -150,13 +150,15 @@ function retrieveFromLocalStorage(){
 
 const cartString = localStorage.getItem('storedProducts');
 const cart = JSON.parse(cartString) || [];
+retrieveFromLocalStorage(); 
 
-if (cartString != '[]') {
-    retrieveFromLocalStorage();
-}
-else{
-    total_cart_price = 0;
-    const totalPrice = document.querySelector('.total-price');
-    totalPrice.innerText = '$ ' + total_cart_price.toFixed(2);
-}
+
+// if (!cartString) {
+//     total_cart_price = 0;
+//     const totalPrice = document.querySelector('.total-price');
+//     totalPrice.innerText = '$ ' + total_cart_price.toFixed(2);
+// }
+// else{
+//     retrieveFromLocalStorage(); 
+// }
 
