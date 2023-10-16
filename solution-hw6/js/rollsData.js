@@ -109,6 +109,7 @@ class Roll {
 
 
 
+/* ----------solution hw6----------------------------------------------------------- */
 
 const cartString = localStorage.getItem('storedProducts');
 const current_cart = JSON.parse(cartString) || [];
@@ -118,7 +119,6 @@ function AddtoCart(rollType, glazing_choice, pack, basePrice){
     current_cart.push(New_cartitems);
 }
 
-/* ----------solution hw6----------------------------------------------------------- */
 
 function submit(){
     AddtoCart(rollType, glazing_choice, pack, rolls[rollType]['basePrice']);

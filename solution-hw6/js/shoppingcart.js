@@ -139,9 +139,6 @@ function deleteCart(Roll){
 /* ----------solution hw6----------------------------------------------------------- */
 
 function retrieveFromLocalStorage(){
-    // const cartString = localStorage.getItem('storedProducts');
-    // const cart = JSON.parse(cartString);
-    console.log(cart);
     for (const product of cart){
         const New_items = new Roll(product.type, product.glazing, product.size, product.basePrice);
         createCart(New_items);
@@ -153,13 +150,4 @@ const cartString = localStorage.getItem('storedProducts');
 const cart = JSON.parse(cartString) || [];
 retrieveFromLocalStorage(); 
 
-
-// if (!cartString) {
-//     total_cart_price = 0;
-//     const totalPrice = document.querySelector('.total-price');
-//     totalPrice.innerText = '$ ' + total_cart_price.toFixed(2);
-// }
-// else{
-//     retrieveFromLocalStorage(); 
-// }
 
