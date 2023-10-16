@@ -148,11 +148,13 @@ function retrieveFromLocalStorage(){
 }
 
 
-if (localStorage.getItem('storedProducts') != '[]') {
+const cartString = localStorage.getItem('storedProducts');
+const cart = JSON.parse(cartString) || [];
+
+if (cartString != '[]') {
     retrieveFromLocalStorage();
 }
 else{
-    const cart = [];
     total_cart_price = 0;
     const totalPrice = document.querySelector('.total-price');
     totalPrice.innerText = '$ ' + total_cart_price.toFixed(2);
