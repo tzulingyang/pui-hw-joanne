@@ -1,0 +1,139 @@
+body {
+    background-image: url('../game_assets/victory-bg.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-color: rgb(17, 17, 17);
+    margin: 0;
+}
+
+h4 {
+    margin: 40px auto 10px auto;
+    color: #ffff;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 28px;
+}
+
+h2 {
+    color: #ffff;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px auto 40px auto;
+}
+
+.animation {
+    height: 400px;
+    width: 47%;
+    background: #46464F;
+    opacity: 0.8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    width: 50%;
+}
+
+button.back {
+    font-family: 'Righteous', sans-serif;
+    margin: auto;
+    width: 200px;
+    height: 55px;
+    font-weight: bold;
+    --orange: #FFAB2D;
+    font-size: 15px;
+    padding: 0.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2.3px solid var(--orange);
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffff;
+    box-shadow: inset 0 0 10px rgba(253, 230, 27, 0.4), 0 0 9px 3px rgba(253, 230, 27, 0.4);
+    text-align: center;
+}
+
+button.back:hover{
+    color: #FFAB2D;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px rgba(253, 230, 27, 0.6), 0 0 9px 3px rgba(253, 230, 27, 0.2);
+    cursor: pointer;
+    text-align: center;
+}
+button.restart {
+    font-family: 'Righteous', sans-serif;
+    margin: auto;
+    width: 208px;
+    height: 55px;
+    font-size: medium;
+    font-weight: bold;
+    --blue: #438BE6;
+    font-size: 15px;
+    padding: 0.7em 1.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2.5px solid var(--blue);
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffff;
+    box-shadow: inset 0 0 10px rgba(27, 106, 253, 0.219), 0 0 9px 3px rgba(27, 106, 253, 0.589);
+}
+
+button.restart:hover {
+    color: rgb(134, 174, 247);
+    font-size: 16px;
+    box-shadow: inset 0 0 10px rgba(27, 31, 253, 0.6), 0 0 9px 3px rgba(27, 31, 253, 0.2);
+    cursor: pointer;
+}
+
+img.character {
+    margin-left: 88%;
+    margin-top:100px;
+}
+
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin: 60px auto 0px auto;
+}
+
+.stars img.big{
+    width: 140px;
+    padding-bottom: 80px;
+}
+
+.stars img.small {
+    width: 100px;
+}
+
+
+.victory {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 24px;
+    line-height: 102px;
+    letter-spacing: 0.1em;
+    color: #FFCC00;
+    margin: auto;
+    margin-top: 0px;
+
+}

@@ -1,0 +1,109 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-image: url('../assets/Home.jpg');
+    /* Full height */
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+div.button {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    /* margin-top: 320px; */
+    margin-top: 22%;
+}
+
+button.start{
+    width: 208px;
+    height: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2.3px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 20%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: #ffff;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.4);
+}
+
+  
+button.start:hover {
+    color: #82ffc9;
+    font-size: large;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    cursor: pointer;
+}
+  
+button.start:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 6em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+  
+  button.start:hover:before {
+    transform: translateX(15em);
+  }
+
+
+/* -------------------------------------------------------------------------- */
+
+button.instruction{
+    width: 208px;
+    height: 55px;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 20px;
+    --blue: #438BE6;
+    font-size: 15px;
+    padding: 0.7em 1.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2.5px solid var(--blue);
+    background: linear-gradient(to right, rgba(27, 31, 253, 0.1) 1%, transparent 20%,transparent 60% , rgba(27, 31, 253, 0.1) 100%);
+    color: #ffff;
+    box-shadow: inset 0 0 10px rgba(27, 106, 253, 0.219), 0 0 9px 3px rgba(27, 106, 253, 0.589);
+}
+
+  
+button.instruction:hover {
+    color: rgb(134, 174, 247);
+    font-size: 16px;
+    box-shadow: inset 0 0 10px rgba(27, 31, 253, 0.6), 0 0 9px 3px rgba(27, 31, 253, 0.2);
+    cursor: pointer;
+}
+  
+button.instruction:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 6em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 31, 253, 0.1) 40%,rgba(27, 31, 253, 0.1) 60% , transparent 100%);
+}
+  
+  button.instruction:hover:before {
+    transform: translateX(15em);
+  }
+
+

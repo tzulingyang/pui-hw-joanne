@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='./css/style.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <title>Game</title>
+    <script src='./js/game.js' async></script>
+</head>
+
+<body>
+    <h1 class='page-title'> LEVEL 1: VEHICLE</h1>
+    <h2 class='game-intro'>Match the word with the picture that shows what the word means</h2>
+
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            Oops!
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+        <!-- <div id="victory-text" class="overlay-text">
+            VICTORY
+            <span class="overlay-text-small">Click to Restart</span>
+        </div> -->
+        
+
+    <div class="game-container">
+        <div class='game-info-container'>
+            <div class='game-info'>
+                Time <span id='time-remaining'>80</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+
+<!-- Game card *12-->
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='archery' src='game_assets/card-value-sports/archery.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='archery' src='game_assets/card-value-sports/Archery_2.jpg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='boxing' src='game_assets/card-value-sports/boxing.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character'  src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='boxing' src='game_assets/card-value-sports/Boxing_2.jpg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='cycling' src='game_assets/card-value-sports/cycling.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='cycling' src='game_assets/card-value-sports/Cycling_2.jpg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='gymnastics' src='game_assets/card-value-sports/gymnastics.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='gymnastics' src='game_assets/card-value-sports/Gymnastics_2.jpg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='icehockey' src='game_assets/card-value-sports/icehockey.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='icehockey' src='game_assets/card-value-sports/Ice-hockey_2.jpg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='cricket' src='game_assets/card-value-sports/cricket.svg'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='game_assets/card-back-rect.png'>
+                <img class='card-back-character' src='game_assets/card-back-character.png'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='cricket' src='game_assets/card-value-sports/Cricket_2.jpg'>
+            </div>
+        </div>
+<!-- Game card *12 end-->
+    </div>
+
+    <div class='function'>
+        <button class='quit' onclick='location.href="flashcard.html";'> QUIT</button>  <!-- need to change page -->
+        <button class='hint' onmousedown='gameHint()' onmouseup='gameHintEnd()'> 
+            <i class="fa fa-eye" aria-hidden="true"></i>HINT
+        </button>
+        
+    </div>
+
+</body>
+</html>
