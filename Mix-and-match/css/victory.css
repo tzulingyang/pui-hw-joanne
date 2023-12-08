@@ -1,3 +1,7 @@
+html{
+    min-height: 100vh;
+}
+
 body {
     background-image: url('../game_assets/victory-bg.jpg');
     background-repeat: no-repeat;
@@ -136,4 +140,34 @@ img.character {
     margin: auto;
     margin-top: 0px;
 
+}
+
+@media (max-width: 820px) {
+    .animation {
+        width: 70%;
+    }
+
+    button.restart {
+        margin-right: 20px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    button.restart:hover {
+        font-size: 20px;
+    }
+
+    button.back {
+        margin-left: 20px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    button.back:hover {
+        font-size: 20px;
+    }
 }

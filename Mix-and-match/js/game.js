@@ -157,7 +157,7 @@ function gameHint(){
             cards[i].classList.add('visible');
             console.log(cards[i].classList);
         }
-
+5
     }
 }
 
