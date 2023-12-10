@@ -1,30 +1,3 @@
-/* bgAudio set up
-class Audio {
-    constructor () {
-        this.bgMusic = new Audio('game_assets/Audio/...');
-        this.matchSound = new Audio('game_assets/Audio/...');
-        this.victorySound = new Audio('game_assets/Audio/...');
-        this.bgMusic.volume = 0.3;
-        this.bgMusic.loop = true;
-    }
-    startMusic() {
-        this.bgMusic.play();
-    }
-    stopMusic() {
-        this.bgMusic.pause();
-        this.bgMusic.currentTime = 0;
-    }
-    match() {
-        this.matchSound.play();
-    }
-    victory() {
-        this.stopMusic();
-        this.victorySound.play();
-    }
-
-}
------------------------------------------------ */
-
 class MixOrMatchGame {
     constructor(totalTime, cards) {
         this.cardSet = cards;
@@ -32,17 +5,15 @@ class MixOrMatchGame {
         this.timeRemaining = totalTime;
         this.timer = document.getElementById('time-remaining');
         this.count = document.getElementById('flips');
-        // this.audioController = new Audio();
     }
     startGame() {
         this.cardtoCheck = null;
         this.timeRemaining = this.totalTime;
         this.totalFlips = 0;
-        this.matchedCards = []; // not sure
+        this.matchedCards = []; 
         this.busy = true;
 
         setTimeout(() => {
-            // this.audioController.startMusic();
             this.shuffle();
             this.countdown = this.startCountDown();
             this.busy = false;
@@ -105,7 +76,6 @@ class MixOrMatchGame {
         this.matchedCards.push(card2);
         card1.classList.add('matched');
         card2.classList.add('matched');
-        // this.audioController.match();
         if(this.matchedCards.length === this.cardSet.length) {  // victory condition
             this.victory();
         }
@@ -132,8 +102,7 @@ class MixOrMatchGame {
 
     victory() {
         clearInterval(this.countdown);
-        // this.audioController.victory();
-        window.setTimeout(window.location.href = 'victory.html', 5000);  // not working??
+        window.setTimeout(window.location.href = '../html/victory.html', 5000);  // not working??
         
     }
     shuffle() {

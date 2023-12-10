@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='../css/style.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Righteous&display=swap" rel="stylesheet">
+    <title>Game</title>
+    <script src='../js/game.js' async></script>
+</head>
+
+<body>
+    <h1 class='page-title'> LEVEL: Occupation</h1>
+    <h2 class='game-intro'>Match the word with the picture that shows what the word means</h2>
+
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            Oops!
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+        
+
+    <div class="game-container">
+        <div class='game-info-container'>
+            <div class='game-info'>
+                Time <span id='time-remaining'>80</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+
+<!-- Game card *12-->
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the closecard'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='astronomer' src='../game_assets/card-value-occupation/astronomer.svg' alt='Image: astronomer'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='astronomer' src='../game_assets/card-value-occupation/Astronomer-2.jpg' alt='Word: astronomer'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='botanist' src='../game_assets/card-value-occupation/botanist.svg' alt='Image: botanist'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='botanist' src='../game_assets/card-value-occupation/Botanist-2.jpg' alt='Word: botanist'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='detective' src='../game_assets/card-value-occupation/detective.svg' alt='Image: detective'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='detective' src='../game_assets/card-value-occupation/Detective-2.jpg' alt='Word: detective'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='journalist' src='../game_assets/card-value-occupation/journalist.svg' alt='Image: journalist'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='journalist' src='../game_assets/card-value-occupation/Journalist-2.jpg' alt='Word: journalist'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='judge' src='../game_assets/card-value-occupation/judge.svg' alt='Image: judge'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='judge' src='../game_assets/card-value-occupation/Judge-2.jpg' alt='Word: judge'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='nurse' src='../game_assets/card-value-occupation/nurse.svg' alt='Image: nurse'>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class='card-back card-face'>
+                <img class='card-back-rect' src='../game_assets/card-back-rect.png' alt='This is the back of the card'>
+                <img class='card-back-character' src='../game_assets/card-back-character.png' alt='This is the back of the card, click to flip it'>
+            </div>
+            <div class='card-front card-face'>
+                <img class='card-value' id='nurse' src='../game_assets/card-value-occupation/Nurse-2.jpg' alt='Word: nurse'>
+            </div>
+        </div>
+<!-- Game card *12 end-->
+    </div>
+
+    <div class='function'>
+        <button class='quit' onclick='location.href="../html/flashcard-sports.html";'> QUIT</button>  <!-- need to change page -->
+        <button class='hint' onmousedown='gameHint()' onmouseup='gameHintEnd()'> 
+            <i class="fa fa-eye" aria-hidden="true"></i>HINT
+        </button>
+        
+    </div>
+
+</body>
+</html>
