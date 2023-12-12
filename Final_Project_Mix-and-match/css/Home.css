@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
+    background-color: rgb(17, 17, 17);
     margin: 0;
 }
 
