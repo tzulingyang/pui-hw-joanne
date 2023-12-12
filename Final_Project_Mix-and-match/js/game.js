@@ -119,6 +119,7 @@ class MixOrMatchGame {
 
 }
 
+// hold the button to flip all the cards over
 function gameHint(){
     let cards = Array.from(document.getElementsByClassName('card'));
     for(let i=0; i < cards.length; i++){
@@ -130,6 +131,7 @@ function gameHint(){
     }
 }
 
+// The cards flip it back if the mouse leave
 function gameHintEnd(){
     let cards = Array.from(document.getElementsByClassName('card'));
     for(let i=0; i < cards.length; i++){
